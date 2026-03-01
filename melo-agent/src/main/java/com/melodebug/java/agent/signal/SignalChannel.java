@@ -1,4 +1,4 @@
-package com.melodebug.agent.signal;
+package com.melodebug.java.agent.signal;
 
 import java.util.HashSet;
 import java.util.Set;
