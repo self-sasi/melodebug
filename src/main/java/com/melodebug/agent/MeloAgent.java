@@ -1,4 +1,4 @@
-package com.melodebug;
+package com.melodebug.agent;
 
 import io.opentelemetry.javaagent.OpenTelemetryAgent;
 
