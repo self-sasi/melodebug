@@ -1,9 +1,6 @@
 plugins {
-    id("java")
+    `java-library`
 }
-
-group = "org.example"
-version = "unspecified"
 
 repositories {
     mavenCentral()
