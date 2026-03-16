@@ -21,6 +21,10 @@ public class SignalChannel {
         SUBSCRIBERS.add(subscriber);
     }
 
+    public static void unsubscribe(Subscriber subscriber) {
+        SUBSCRIBERS.remove(subscriber);
+    }
+
     public static boolean isPresent(Object subscriber) {
         return SUBSCRIBERS.contains(subscriber);
     }
