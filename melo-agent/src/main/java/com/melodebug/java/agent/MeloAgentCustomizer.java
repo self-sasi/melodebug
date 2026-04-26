@@ -6,7 +6,6 @@ import io.opentelemetry.sdk.autoconfigure.spi.AutoConfigurationCustomizerProvide
 public class MeloAgentCustomizer implements AutoConfigurationCustomizerProvider {
 
     static {
-        // This is the "loudest" log possible
         System.err.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.err.println("!!! MELO DEBUG: Customizer Class LOADED !!!");
         System.err.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
