@@ -20,7 +20,16 @@
   -cp melo-sample-app/build/classes/java/main \
     com.melodebug.sample.SampleApp```
 
-## Run sample app with custom agents
-- `./gradlew :melo-agent:jar`
-- `java -javaagent:melo-agent/build/libs/melo-agent.jar -cp melo-sample-app/build/classes/java/main com.melodebug.sample.SampleApp`
+## Run sample app with MeloAgent (Wrapper for OtelAgent) + Extensions
+- ```bash
+  java \
+  -javaagent:/path/to/opentelemetry-javaagent.jar \
+  -Dotel.javaagent.extensions=melo-agent/build/libs/melo-agent-extension.jar \
+  -Dotel.traces.exporter=logging \
+  -Dotel.javaagent.debug=true \
+  -cp melo-sample-app/build/classes/java/main \
+  com.melodebug.sample.SampleApp \
+  2>&1 | tee otel-run.log ```
+
+
 
